@@ -75,6 +75,19 @@ nav {
     gap: 40px;
 }
 
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px;
+}
+
 .menu a{
     font-size: 16px;
     font-weight: 500;
@@ -397,6 +410,25 @@ footer a{
     .container{
         max-width: 960px;
     }
+    .pet_project {
+        width: 350px;
+    }
+    .works .section_wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .workflow .section_wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .medium_wrapper {
+        width: auto;
+    }
+    form {
+        width: 400px;
+    }
 }
 
 /* Medium: 768px - 991px */
@@ -404,6 +436,21 @@ footer a{
     .container{
         max-width: 720px;
         margin: 0 auto;
+    }
+    .medium_wrapper_center {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    header .section_wrapper_center {
+        flex-direction: column-reverse;
+    }
+    h1 {
+        width: auto;
+    }
+    header img {
+        height: 300px;
     }
 }
 
@@ -413,6 +460,17 @@ footer a{
         max-width: 540px;
         margin: 0 auto;
     }
+    .contact_form .medium_wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .links {
+        padding: 0;
+
+    }
+    .form_info {
+        width: auto;
+    }
 }
 
 /* Extra Small: 320px - 575px */
@@ -421,6 +479,69 @@ footer a{
         width: auto;
         padding: 0 15px;
         margin: 0;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu li {
+        opacity: 0;
+    }
+    .burger {
+        display: flex;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+    header img {
+        height: 200px;
+    }
+    .about_me img {
+        height: 200px;
+    }
+    .medium_wrapper_center {
+        gap: 10px;
+    }
+    .about_me p {
+        width: auto;
+    }
+    .workflow_block {
+        width: auto;
+        height: auto;
+    }
+    .workflow img{
+        width: 140px;
+    }
+    .pet_project {
+        width: auto;
+        height: auto;
+    }
+    form {
+        width: 100%;
+    }
+    button {
+        width: 90%;
+    }
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
