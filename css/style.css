@@ -307,7 +307,7 @@ footer a:hover {
     margin-right: 10px;
     background-color: #a8bbf9;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -452,6 +452,14 @@ footer a{
     header img {
         height: 300px;
     }
+    .project-list {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 300px;
+    }
 }
 
 /* Small: 576px - 767px */
@@ -470,6 +478,16 @@ footer a{
     }
     .form_info {
         width: auto;
+    }
+    .sort-btn {
+        width: fit-content;
+        margin: 0;
+    }
+    .project-sort {
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 10px;
+        justify-content: start;
     }
 }
 
@@ -496,9 +514,6 @@ footer a{
     }
     .menu.nav-active {
         display: flex;
-    }
-    .menu li {
-
     }
     .burger {
         display: flex;
@@ -532,7 +547,10 @@ footer a{
     form {
         width: 100%;
     }
-    button {
+    form button {
         width: 90%;
+    }
+    .project {
+        width: auto;
     }
 }
