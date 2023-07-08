@@ -212,7 +212,7 @@ form input.error{
     font-weight: 400;
 }
 
-.links {
+.my_links {
     margin-top: 20px;
     display: flex;
     gap: 10px;
@@ -331,6 +331,10 @@ footer a:hover {
     text-align: center;
     color: #FFFFFF;
     background-color: #8697f3;
+}
+
+.project p span{
+    color: #202063;
 }
 
 .project img {
@@ -472,9 +476,8 @@ footer a{
         flex-direction: column;
         gap: 20px;
     }
-    .links {
+    .my_links {
         padding: 0;
-
     }
     .form_info {
         width: auto;
@@ -552,5 +555,22 @@ footer a{
     }
     .project {
         width: auto;
+    }
+    .main_info_project img {
+        width: 30%;
+    }
+    .main_info_project {
+        gap: 20px;
+    }
+    .main_info_project h1 {
+        font-size: 30px;
+    }
+    .main_info_project span h1 {
+        font-size: 18px;
+    }
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 }
