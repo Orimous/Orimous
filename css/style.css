@@ -31,7 +31,7 @@ body{
 }
 
 ul li{
-    display: block;
+
 }
 
 h1 {
@@ -71,6 +71,7 @@ nav {
 }
 
 .menu {
+    list-style: none;
     display: flex;
     gap: 40px;
 }
@@ -346,6 +347,7 @@ footer a:hover {
     display: flex;
     gap: 60px;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .main_info_project h1 {
@@ -362,7 +364,6 @@ footer a:hover {
 }
 
 .update_project {
-    padding-top: 20px;
     padding-bottom: 5px;
     margin-bottom: 20px;
     border-bottom: 3px solid #8697f3;
@@ -394,18 +395,21 @@ footer a:hover {
 }
 
 .app__down img{
-    width: 25px;
     height: 25px;
 }
 
 .app__down:hover{
     color: #000;
-    background: #fff;
+    background: #e1eafe;
 }
 
 footer a{
     color: #fff;
     text-align: center;
+}
+
+.list {
+    padding: 15px 0 20px 20px;
 }
 
 
@@ -475,6 +479,12 @@ footer a{
     .contact_form .medium_wrapper {
         flex-direction: column;
         gap: 20px;
+    }
+    .main_info_project h1 {
+        font-size: 35px;
+    }
+    section {
+        margin-top: 50px;
     }
     .my_links {
         padding: 0;
@@ -563,7 +573,7 @@ footer a{
         gap: 20px;
     }
     .main_info_project h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .main_info_project span h1 {
         font-size: 18px;
