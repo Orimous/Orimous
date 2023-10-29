@@ -1,25 +1,23 @@
-const sortBtns = document.querySelectorAll('.sort-btn');
-const projectList = document.querySelector('.project-list');
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.menu');
+    const navLinks = document.querySelectorAll('.menu li');
 
-sortBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const filter = btn.getAttribute('data-filter');
+    // Переключение навигационного меню
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
 
-        // Удаляем активный класс у всех кнопок
-        sortBtns.forEach(btn => btn.classList.remove('active'));
-        // Добавляем активный класс только к выбранной кнопке
-        btn.classList.add('active');
-
-        // Проходимся по всем проектам и прячем/показываем их в зависимости от выбранного фильтра
-        for (let project of projectList.children) {
-            if (filter === 'all') {
-                project.style.display = 'block';
-            } else if (project.classList.contains(filter)) {
-                project.style.display = 'block';
-            } else {
-                project.style.display = 'none';
-            }
-        }
+        // Анимация бургерной иконки
+        burger.classList.toggle('toggle');
     });
-});
+};
 
+navSlide();
+
+let typed = new Typed(".multipleText", {
+    strings: ["Веб-разработчик", "UX/UI дизайнер", "Android разработчик", "Студент-информатик", "Технический энтузиаст"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
