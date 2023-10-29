@@ -1,62 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orimous</title>
-    <link rel="icon" type="image/x-icon" href="img/page_logo.svg">
+    <link rel="icon" type="image/x-icon" href="img/head-logo.svg">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header" id="header">
         <div class="container">
             <nav>
                 <a href="index.html">
-                    <img src="img/logo.svg" alt="" class="logo">
+                    <img src="img/logo.svg" alt="Orimous" class="logo">
                 </a>
                 <ul class="menu">
-                    <li><a href="index.html" class="active">Главная</a></li>
-                    <li><a href="pages/about.html">Обо мне</a></li>
-                    <li><a href="pages/portfolio.html">Портфолио</a></li>
-                    <li><a href="pages/contacts.html">Контакты</a></li>
+                    <li><a href="#header" class="active" style="--i:1">Home</a></li>
+                    <li><a href="#about" style="--i:2">About</a></li>
+                    <li><a href="#portfolio" style="--i:3">Portfolio</a></li>
+                    <li><a href="#contact" style="--i:4">Contact</a></li>
                 </ul>
-                <div class="social">
-                    <a href="https://github.com/Orimous/" target="_blank"><img src="img/GitHub.svg" alt=""></a>
-                    <a href="https://dribbble.com/Orimous" target="_blank"><img src="img/Dribbble.svg" alt=""></a>
-                    <a href="https://www.behance.net/orimous1" target="_blank"><img src="img/Behance.svg" alt=""></a>
-                </div>
-                <div class="burger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div class="header__menu burger__menu">
+                    <div class="burger__menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="burger__menu__body">
+                        <ul class="burger__menu__list">
+                            <li class="burger__menu__item"><a href="#header" class="burger__menu__link active">Home</a>
+                            </li>
+                            <li class="burger__menu__item"><a href="#about" class="burger__menu__link">About</a>
+                            </li>
+                            <li class="burger__menu__item"><a href="#portfolio" class="burger__menu__link">Portfolio</a>
+                            </li>
+                            <li class="burger__menu__item"><a href="#contact" class="burger__menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </nav>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="two-column">
-                <div class="left-column">
-                    <h4>Привет Мир! Меня зовут </h4>
-                    <h1>ORIMOUS</h1>
-                    <h3><span class="multipleText"></span></h3>
-                    <p class="hello_text">
-                        Добро пожаловать на мой персональный Website
-                        <span class="hello_emoji hello_emoji_wrapper">👋🏼</span>
+            <main>
+                <div class="main__content">
+                    <h3>Hello, It's Me</h3>
+                    <h1>Orimous</h1>
+                    <h3>And I'm <span class="multipleText"></span></h3>
+                    <p>
+                        I will make your dreams come true
                     </p>
                 </div>
-                <div class="right-column">
-                    <img src="img/main_illustration.svg" alt="">
+                <img src="img/OrimousLike.gif" alt="" class="like">
+            </main>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <img src="img/OrimousLike.gif" alt="" class="aboutLike">
+                <div class="about__info">
+                    <p>
+                        Hi! I am Orimous, a developer focused on crafting great android apps. Create mobile apps have
+                        been my passion since the days I started working with computers. I enjoy creating beautifully
+                        designed, intuitive and functional websites and mobile apps.
+                    </p>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <div class="portfolio__wrapper">
+                <div class="portfolio__container">
+                    <a href="androidPoftfolio.html">
+                        <img src="img/androidDeveloper.png" alt="">
+                        <h3>Android Development</h3>
+                    </a>
+                </div>
+                <div class="portfolio__container">
+                    <a href="">
+                        <img src="img/webDeveloper.jpg" alt="">
+                        <h3>Frontend Development</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Contact me</h1>
+            <div class="contact__content">
+                <div class="social-networks">
+                    <a href="https://telegram.im/@orimous" class="telegram">
+                        <img src="img/telegram.svg" alt="">
+                    </a>
+                    <a href="mailto:orimouswork@gmail.com" class="mail">
+                        <img src="img/mail.svg" alt="">
+                    </a>
+                </div>
+                <form action="sender.php" method="post">
+                    <input type="text" required="true" name="name" placeholder="Name">
+                    <input type="email" required="true" name="email" placeholder="E-mail">
+                    <textarea type="text" name="text" placeholder="Your massage:" name="" id="" cols="30"
+                        rows="10"></textarea>
+                    <button type="button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="privacyPolice.html">@2022 Orimous Ⓒ All rights reserved</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
