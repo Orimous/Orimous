@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orimous</title>
+    <link rel="icon" type="image/x-icon" href="../img/page_logo.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="about_page">
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="" class="logo">
+                </a>
+                <ul class="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="about.html" class="active">Обо мне</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://github.com/Orimous/" target="_blank"><img src="../img/GitHub.svg" alt=""></a>
+                    <a href="https://dribbble.com/Orimous" target="_blank"><img src="../img/Dribbble.svg" alt=""></a>
+                    <a href="https://www.behance.net/orimous1" target="_blank"><img src="../img/Behance.svg" alt=""></a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="padding-top"></div>
+    <section>
+        <div class="container">
+            <div class="about-wrap">
+                <div class="heading">
+                    <h2>Обо мне</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="two-column">
+                    <div class="left-column">
+                        <img src="../img/about_illustration.svg" alt="" class="about_image">
+                    </div>
+                    <div class="right-column">
+                        <p>
+                            Я - студент, который не ограничивается только одной областью знаний. Я увлекаюсь IT и считаю, что это одна из самых захватывающих и быстроразвивающихся отраслей в мире.
+                        </p>
+                        <br>
+                        <p>
+                            С детства я любил рисовать и создавать красивые вещи. Это было моим главным увлечением, и я решил превратить свою страсть в профессию. Сейчас я работаю в качестве дизайнера и создаю уникальные и привлекательные дизайны для различных проектов. Я также являюсь верстальщиком и создаю адаптивные и современные веб-сайты. Кроме того, я занимаюсь разработкой приложений для Android, что позволяет мне быть в курсе последних технологических тенденций.
+                        </p>
+                        <br>
+                        <p>
+                            Я убежден, что творчество - это то, что делает нашу жизнь интересной и яркой. И я стараюсь вносить свой вклад в мир дизайна и разработки, чтобы делать его еще лучше. Я увлечен своей работой и с нетерпением жду новых вызовов и возможностей для реализации своих идей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="heading">
+                <h2>Навыки</h2>
+                <div class="line"></div>
+            </div>
+            <div class="tab-tools">
+                <button class="tab-button-tools" onclick="openTab(event, 'tab1')">Стек технологий</button>
+                <button class="tab-button-tools" onclick="openTab(event, 'tab2')">Инструменты</button>
+            </div>
+            <div id="tab1" class="tab-content">
+                <div class="technology_group">
+                    <div class="skills_block">
+                        <img src="../img/html.svg" alt="">
+                        <div class="skill_info">
+                            <h6>Html</h6>
+                            <span>Продвинутый</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/css.svg" alt="">
+                        <div class="skill_info">
+                            <h6>CSS</h6>
+                            <span>Продвинутый</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/js.svg" alt="">
+                        <div class="skill_info">
+                            <h6>JavaScript</h6>
+                            <span>Начинающий</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/php.svg" alt="">
+                        <div class="skill_info">
+                            <h6>PHP</h6>
+                            <span>Продвижение</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/compose.png" alt="">
+                        <div class="skill_info">
+                            <h6>Jetpack Compose</h6>
+                            <span>Продвижение</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/kotlin.svg" alt="">
+                        <div class="skill_info">
+                            <h6>Kotlin</h6>
+                            <span>Продвижение</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-content">
+                <div class="tools_group">
+                    <div class="skills_block">
+                        <img src="../img/gradle.svg" alt="">
+                        <div class="skill_info">
+                            <h6>Gradle</h6>
+                            <span>Автоматизация сборки<br>приложений</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/git.svg" alt="">
+                        <div class="skill_info">
+                            <h6>GIT</h6>
+                            <span>Контроль версий</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/GitHub.svg" alt="">
+                        <div class="skill_info">
+                            <h6>GitHub</h6>
+                            <span>Git-хостинг</span>
+                        </div>
+                    </div>
+                    <div class="skills_block">
+                        <img src="../img/npm.svg" alt="">
+                        <div class="skill_info">
+                            <h6>NPM</h6>
+                            <span>Менеджер пакетов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="../js/skillsNavigate.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
